@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plain PWA</title>
+  <meta name="description" content="A simple PWA starter w/o nodejs, just plain browser.">
+  <link rel="manifest" href="manifest.json">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="PWA">
+  <meta name="apple-mobile-web-app-title" content="PWA">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="msapplication-navbutton-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-starturl" content="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="icon" type="image/png" sizes="64x64" href="/assets/splash-64.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="64x64" href="/assets/splash-64.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="/assets/splash-128.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="128x128" href="/assets/splash-128.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/splash-512.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="512x512" href="/assets/splash-512.png">
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+</head>
+<body onload="installServiceWorkerAsync()">
+  <h1>Plain PWA</h1>
+  <p>
+    A simple PWA starter, just need plain browser.
+    You're currently: <span id="online_status"></span>
+  </p>
+</body>
+</html>
